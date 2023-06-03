@@ -44,6 +44,7 @@ public void OnPluginStart()
 	HookConVarChange(cvar = CreateConVar("sm_Quizz_time_maxamid_questions",	"250",	"The maximum time in seconds between each of the words.", _, true, 10.0),	CVAR_MaxQuestion);
 	maxquestion = cvar.FloatValue;
 	AutoExecConfig(true, "shop_Quizz");
+	Answers = new ArrayList(ByteCountToCells(256));
     LoadConfig();
 }
 
@@ -78,7 +79,7 @@ public Action CreateQuestion(Handle timer)
 {   
 	char sBuffer[100][256];
 
-    Answers = new ArrayList(ByteCountToCells(256));  // Creating a new ArrayList to hold the answers				 
+    Answers.Clear();  								// Clearing the ArrayList to hold the answers				 
 
 	if(questionCount >= count){						// If there are no more new questions left we reset the counting
 		questionCount = 0;

@@ -20,19 +20,19 @@ sm_Quizz_maximum_credits "100"
 // Minimum: "1.000000"
 sm_Quizz_minimum_credits "5"
 
-// Time in seconds to guess the given word.
+// Time in seconds to answer the given question.
 // -
 // Default: "15"
 // Minimum: "5.000000"
 sm_Quizz_time_guess_word "15"
 
-// The maximum time in seconds between each of the words.
+// The maximum time in seconds between each questions.
 // -
 // Default: "250"
 // Minimum: "10.000000"
 sm_Quizz_time_maxamid_questions "10"
 
-// The minimum time in seconds between each of the words.
+// The minimum time in seconds between each questions.
 // -
 // Default: "100"
 // Minimum: "5.000000"
